@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "content_security_policy":"frame-src 'self' <the url which you are using as authDomain in firebase.initializeApp()>",
   "icons": [
     {
       "src": "favicon.ico",

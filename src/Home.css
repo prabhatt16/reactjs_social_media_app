@@ -1,0 +1,19 @@
+.main{
+   overflow: hidden;
+    margin-top: 55px;
+    /* margin-left:34%;
+    margin-right: auto;
+    padding: 10px; */
+}
+.vertical-line{
+    width: 610px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-top: 1px solid lightgray;
+}
+.mainOfMain{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 auto;
+}
