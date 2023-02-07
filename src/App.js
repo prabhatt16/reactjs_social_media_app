@@ -1,12 +1,11 @@
 import './App.css';
-import Home from './Home';
+import Home from './components/Home';
 import  { BrowserRouter as Router ,Route, Switch } from 'react-router-dom';
 import { useContext, useEffect, useState } from 'react';
-import GoogleSignIn from './GoogleSignIn';
-// import { UserContext } from './User';
-import ProfilePage from './ProfilePage';
+import GoogleSignIn from './components/GoogleSignIn';
+import ProfilePage from './components/ProfilePage';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import Loading from './Loading';
+// import Loading from './Loading';
 import { auth, db } from './firebase';
 function App() {
 

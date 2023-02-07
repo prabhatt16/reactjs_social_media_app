@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import { auth } from './firebase';
+import { auth } from '.././firebase';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
@@ -15,9 +15,9 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import { Icon } from '@material-ui/core';
-import logo from './logo-icon.svg'
+import logo from '../logo-icon.svg'
 import { useHistory } from 'react-router-dom'
-import { useEffect } from 'react';
+
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,

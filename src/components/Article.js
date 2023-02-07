@@ -1,11 +1,9 @@
 import { Avatar, makeStyles,Button,Modal } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
-import './Post.css'
 import { BiLike,BiComment,BiShare, BiSend} from 'react-icons/bi';
 import { AiTwotoneLike} from 'react-icons/ai';
-
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth, db } from './firebase';
+import { auth, db } from '.././firebase';
 import firebase from 'firebase';
 import { icons } from 'react-icons/lib';
 
@@ -16,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',        
     },
 }));
-function Post({imageUrl,captionText}) {
+function Post({gradient,para,heading}) {
     const classes = useStyles();
     const [user]=useAuthState(auth);
     const [likeCount, setlikeCount] = useState(0);
@@ -57,7 +55,7 @@ function Post({imageUrl,captionText}) {
 
 
     const body = (
-        <div className='img-container'>
+        <div className='img-container' >
             <input type="text"  placeholder='Write comment' onChange={(event)=>setComment(event.target.value)} value={comment} className='comment-text'/>
             <Button color="primary" type="submit" variant="contained" onClick={addComment} className="upload-btn">upload</Button>
         </div>
@@ -70,17 +68,19 @@ function Post({imageUrl,captionText}) {
     setOpen(true);
   };
     return (
-        <div className="post">
+        <div className="post" >
             <div className="post_header">
                 <Avatar alt={user?.displayName} src={user.photoURL} className="profile-logo"/>
                 <div className='user-info'>
                     <h3 className="userName">{user.displayName}</h3>
                     <p>software Engineer at Google-II</p> 
                 </div>
-                 
             </div>
-            <h4 className="caption">{captionText}</h4>
-            <img className="post_img" src={imageUrl} alt='post-pic'/>
+            <div className="post-container" style={{backgroundImage:gradient}}>
+                <h4 className="heading">{heading}</h4>
+                 <p className="para">{para}</p>
+            </div>
+           
             <div className='post-icons'>
                 <div className='icons-field'>
                     <AiTwotoneLike  style={{color:btnColor}} className="like-icon" onClick={()=>numOfLike()}/>

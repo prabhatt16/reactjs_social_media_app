@@ -1,10 +1,9 @@
 import { Avatar } from '@material-ui/core'
 import React, { useState } from 'react'
-import './TextPost.css'
 import { BiLike,BiComment,BiShare, BiSend} from 'react-icons/bi';
 import {AiTwotoneLike} from 'react-icons/ai';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth, db } from './firebase';
+import { auth, db } from '.././firebase';
 
 
 

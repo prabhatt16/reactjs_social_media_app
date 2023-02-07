@@ -1,5 +1,4 @@
 import React from 'react';
-import './Home.css';
 import './Navbar';
 import './Post';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -9,7 +8,7 @@ import VideoPost from './VideoPost';
 import ArticlePost from './Article'
 import TopBanner from './TopBanner';
 import { useEffect, useState } from 'react';
-import { auth, db } from './firebase';
+import { auth, db } from '.././firebase';
 import { useParams } from 'react-router-dom';
 import TextPost from './TextPost';
 

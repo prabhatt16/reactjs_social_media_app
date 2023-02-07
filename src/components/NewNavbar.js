@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import {FaHistory} from 'react-icons/fa';
 import {FiHelpCircle} from 'react-icons/fi';
 import Avatar from '@material-ui/core/Avatar';
-import './NewNavbar.css'
-import { auth, db } from './firebase';
+import { auth, db } from '.././firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useHistory } from 'react-router-dom';
-import media from './media.png'
+import media from '../media.png';
+
 function NewNavbar() {
     const [user]=useAuthState(auth);
    

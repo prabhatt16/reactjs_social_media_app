@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
-import './SignUp.css'
-import logo from './logo-icon.svg'
+import logo from '../logo-icon.svg'
 import { useHistory } from 'react-router';
 import { useEffect } from 'react';
-import { auth, db } from './firebase';
+import { auth, db } from '.././firebase';
 
 function SignUp() {
     const history=useHistory();

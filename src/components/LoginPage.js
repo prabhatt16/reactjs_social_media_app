@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
-import './LoginPage.css'
-import logo from './logo-icon.svg'
-import { auth } from './firebase';
+import logo from '../logo-icon.svg'
+import { auth } from '.././firebase';
 import { useHistory } from 'react-router';
 import { useEffect } from 'react';
 

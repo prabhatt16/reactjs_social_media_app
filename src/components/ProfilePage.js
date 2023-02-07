@@ -1,8 +1,7 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-import './ProfilePage.css'
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from './firebase';
+import { auth } from '.././firebase';
 import { useHistory } from 'react-router-dom';
 import { hslToRgb } from '@material-ui/core';
 

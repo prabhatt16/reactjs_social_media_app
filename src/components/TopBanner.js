@@ -1,11 +1,10 @@
 import { Avatar, Button, makeStyles, Modal } from '@material-ui/core';
 import React, { useState } from 'react'
-import './TopBanner.css'
 import { BiSend } from 'react-icons/bi';
 import { BsCardImage,BsFileText } from 'react-icons/bs';
 import { FaYoutube } from 'react-icons/fa';
 import { GrArticle } from 'react-icons/gr';
-import {storage, db, auth} from './firebase';
+import {storage, db, auth} from '.././firebase';
 import firebase from 'firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 

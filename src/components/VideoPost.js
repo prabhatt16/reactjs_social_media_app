@@ -1,11 +1,9 @@
 import { Avatar, makeStyles,Button,Modal } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
-import './VideoPost.css'
 import { BiLike,BiComment,BiShare, BiSend} from 'react-icons/bi';
 import { AiTwotoneLike} from 'react-icons/ai';
-
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth, db } from './firebase';
+import { auth, db } from '.././firebase';
 import firebase from 'firebase';
 import { icons } from 'react-icons/lib';
 

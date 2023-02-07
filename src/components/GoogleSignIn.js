@@ -1,9 +1,8 @@
 import React from 'react'
-import './GoogleSignIn.css';
 import Button from '@material-ui/core/Button';
-import LogInImage from './entry.png'
+import LogInImage from '.././entry.png'
 import {useAuthState} from 'react-firebase-hooks/auth';
-import { auth, provider } from './firebase';
+import { auth, provider } from '.././firebase';
 import { useHistory } from 'react-router-dom';
 
 function GoogleSignIn() {
